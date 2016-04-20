@@ -13,7 +13,7 @@ The solution is to add `launchMode` to the main activity definition:
     ...
 ```
 
-According to the docs,
+According to the docs for `singleTask` mode,
 
 > The system creates the activity at the root of a new task and routes the intent to it. However, if an instance of the activity already exists, the system routes the intent to existing instance through a call to its onNewIntent() method, rather than creating a new one.
 

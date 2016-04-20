@@ -1,0 +1,13 @@
+{
+  "name": "AndroidIntentIssue",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "link": "adb shell am start -a android.intent.action.VIEW -d 'androidintentissue://testtest' com.androidintentissue"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-native": "^0.23.1"
+  }
+}

@@ -33,20 +33,9 @@ class AndroidIntentIssue extends Component {
   };
 
   renderIntent (intent, i) {
-    var fields = [];
-    for (var fieldName in intent) {
-      if (intent.hasOwnProperty(fieldName)) {
-        var field = intent[field];
-        fields.push(
-          <View key={fieldName} style={styles.intentField}>
-            <Text style={styles.label}>{fieldName}: </Text><Text>{intent[fieldName]}</Text>
-          </View>
-        );
-      }
-    }
     return (
       <View key={i} style={styles.intent}>
-        {fields}
+        <Text>{intent}</Text>
       </View>
     );
   }
